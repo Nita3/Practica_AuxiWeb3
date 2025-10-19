@@ -1,0 +1,41 @@
+<!-- Estudiante: Ana Camila Aguirre Chuquimia -->
+<!-- C.I.: 6997906 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Digimon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section>
+    <div class="controls">
+      <input type="text" id="q" placeholder="Escribe nombre o nivel">
+      <select id="mode">
+        <option value="name">Nombre</option>
+        <option value="level">Nivel</option>
+      </select>
+      <button class="primary" id="btnSearch">Buscar</button>
+      <button id="btnAll">Listar todos</button>
+    </div>
+    <div id="status" class="small-muted" style="margin-top:8px"></div>
+    <table aria-live="polite">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Nivel</th>
+        </tr>
+      </thead>
+      <tbody id="results"></tbody>
+    </table>
+  </section>
+  <p style="margin-top:12px">
+    API usada: <code>https://digimon-api.vercel.app/api/digimon</code>
+  </p>
+  <p><a href="index.html">← Volver</a></p>
+</main>
+<script src="digimon_search.js"></script>
+</body>
+</html>

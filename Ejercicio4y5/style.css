@@ -1,0 +1,135 @@
+/* Estudiante: Ana Camila Aguirre Chuquimia */
+/* C.I.: 6997906 */
+:root {
+    --accent: #2b6cb0;
+    --muted: #666;
+    --card-bg: #fff;
+    --glass: rgba(255, 255, 255, 0.9);
+}
+* {
+    box-sizing: border-box
+}
+body {
+    font-family: Inter, system-ui, Arial, sans-serif;
+    margin: 0;
+    background: #f2f6fb;
+    color: #222
+}
+.container {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 18px
+}
+h1 {
+    margin: 0 0 8px
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 12px
+}
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none
+}
+footer {
+    margin-top: 20px;
+    color: var(--muted)
+}
+.card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 6px 18px rgba(20, 20, 40, 0.06)
+}
+.controls {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+input[type="text"],
+select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd
+}
+button {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer
+}
+
+button.primary {
+    background: var(--accent);
+    color: #fff;
+    border: none
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px
+}
+
+th,
+td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left
+}
+
+th {
+    background: #f7fafc
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 12px
+}
+
+.poke-card {
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 6px 14px rgba(10, 10, 30, 0.04)
+}
+
+.poke-card img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain
+}
+
+.poke-name {
+    margin: 6px 0 0;
+    text-transform: capitalize
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px
+}
+
+.small-muted {
+    color: var(--muted);
+    font-size: 0.9rem
+}
+
+
+@media (max-width:480px) {
+    nav ul {
+        flex-direction: column
+    }
+}
